@@ -16,7 +16,7 @@
     @product = Product.find(params[:id])
     respond_to do |format|
       format.html { render :show }
-      format.json { render json: @product, status: 100 }
+      format.json { render json: @product }
     end
   end
 
